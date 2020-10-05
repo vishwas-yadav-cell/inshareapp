@@ -8,10 +8,6 @@ const connectDB = require('./config/db');
 connectDB(); //running the connectDB function here.
 
 // cors handling:
-// const corsOptions = {
-//     origin: process.env.ALLOWED_CLIENTS.split(',')
-// }
-// app.use(cors(corsOptions));
 app.use(cors());
 
 // Setup Template engine:
