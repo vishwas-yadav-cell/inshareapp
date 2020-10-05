@@ -1,17 +1,17 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const cors = require('cors');
+// const cors = require('cors');
 
 // Database connection:
 const connectDB = require('./config/db');
 connectDB(); //running the connectDB function here.
 
 // cors handling:
-const corsOptions = {
-    origin: process.env.ALLOWED_CLIENTS.split(',')
-}
-app.use(cors(corsOptions));
+// const corsOptions = {
+//     origin: process.env.ALLOWED_CLIENTS.split(',')
+// }
+// app.use(cors(corsOptions));
 
 // Setup Template engine:
 app.set('views', path.join(__dirname, '/views'));
